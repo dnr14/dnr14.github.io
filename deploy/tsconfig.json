@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowJs": true, //수정
+    "jsx": "preserve", //수정
+    "strict": true,
+    "noUnusedLocals": true, //수정
+    "noUnusedParameters": true, //수정
+    "noImplicitReturns": true, //수정
+    "baseUrl": "./src",
+    "paths": {
+      "components/*": ["./components/*"],
+      "utils/*": ["./utils/*"],
+      "hooks/*": ["./hooks/*"],
+      "images/*": ["./images/*"]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "src/types"]
+  },
+  "include": ["src/**/*.tsx", "src/types/declaration.d.ts"],
+  "exclude": ["node_modules"]
+}
