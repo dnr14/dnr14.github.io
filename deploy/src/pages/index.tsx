@@ -1,33 +1,68 @@
-import React, { FunctionComponent } from 'react';
-import styled from '@emotion/styled';
-import GlobalStyle from 'components/Common/GlobalStyle';
-import Introduction from 'components/Main/Introduction';
-import Footer from 'components/Common/Footer';
-import CategoryList from 'components/Main/CategoryList';
-import PostList from 'components/Main/PostList';
+import React, { useRef } from 'react';
+import withLayout from 'hoc/withLayout';
+import Top from 'components/Top/Top';
+import About from 'components/About/About';
+import useScrollTop from 'hooks/useScrollTop';
+import Skills from 'components/Skills/Skills';
+import Archiving from 'components/Archiving/Archiving';
+import Projects from 'components/Projects/Projects';
+import Header from 'components/Common/Header';
 
-const CATEGORY_LIST = {
-  All: 5,
-  Web: 3,
-  Mobile: 2,
-};
+const IndexPage = () => {
+  const topRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
+  const archivingRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const { handleScrollMove } = useScrollTop();
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-`;
+  const handleTopFocuse = (type: Types) => () => {
+    if (type === 'top') {
+      const { current } = topRef;
+      if (!current) return;
+      handleScrollMove(current.offsetHeight);
+    }
+    if (type === 'about') {
+      const { current } = aboutRef;
+      if (!current) return;
+      handleScrollMove(current.offsetTop - 72);
+    }
 
-const IndexPage: FunctionComponent = function () {
+    if (type === 'skills') {
+      const { current } = skillsRef;
+      if (!current) return;
+      handleScrollMove(current.offsetTop - 72);
+    }
+    if (type === 'archiving') {
+      const { current } = archivingRef;
+      if (!current) return;
+      handleScrollMove(current.offsetTop - 72);
+    }
+    if (type === 'projects') {
+      const { current } = projectsRef;
+      if (!current) return;
+      handleScrollMove(current.offsetTop - 72);
+    }
+  };
+
   return (
-    <Container>
-      <GlobalStyle />
-      <Introduction />
-      <CategoryList selectedCategory="Web" categoryList={CATEGORY_LIST} />
-      <PostList />
-      <Footer />
-    </Container>
+    <>
+      <Header handleTopFocuse={handleTopFocuse} />
+      <main>
+        <Top ref={topRef} handleTopFocuse={handleTopFocuse('top')} />
+        <About ref={aboutRef} handleTopFocuse={handleTopFocuse('about')} />
+        <Skills ref={skillsRef} handleTopFocuse={handleTopFocuse('skills')} />
+        <Archiving
+          ref={archivingRef}
+          handleTopFocuse={handleTopFocuse('archiving')}
+        />
+        <Projects
+          ref={projectsRef}
+          handleTopFocuse={handleTopFocuse('projects')}
+        />
+      </main>
+    </>
   );
 };
 
-export default IndexPage;
+export default withLayout(IndexPage);

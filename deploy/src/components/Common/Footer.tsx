@@ -1,23 +1,22 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 import styled from '@emotion/styled';
+import { flexJustifyAlign } from './GlobalStyle';
 
 const FooterWrapper = styled.div`
-  display: grid;
-  place-items: center;
+  font-family: 'Ubuntu', sans-serif;
   margin-top: auto;
-  padding: 50px 0;
-  font-size: 15px;
-  text-align: center;
+  color: #453a33;
+  padding: 3.125rem 0;
+  flex-direction: column;
+  ${flexJustifyAlign('center', 'center')}
   line-height: 1.5;
 `;
 
-const Footer: FunctionComponent = function () {
-  return (
-    <FooterWrapper>
-      Thank You for Visiting My Blog, Have a Good Day 😆
-      <br />© 2021 Developer Hyun, Powered By Gatsby.
-    </FooterWrapper>
-  );
-};
+const Footer: FC = () => (
+  <FooterWrapper>
+    <p> Thank You for Visiting portfolio, Have a Good Day 😆</p>
+    <p>© 2021 Developer MW, Powered By Gatsby.</p>
+  </FooterWrapper>
+);
 
 export default Footer;
