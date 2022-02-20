@@ -45,6 +45,7 @@ export const orangeColor = () => css`
 
 export const mobile = () => `@media screen and (max-width: 500px)`;
 export const tab = () => `@media screen and (max-width: 768px)`;
+export const maxTab = () => `@media screen and (max-width: 992px)`;
 export const pc = () => `@media screen and (max-width: 1200px)`;
 
 export const hoverPositionDown = () => css`

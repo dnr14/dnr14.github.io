@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import withLayout from 'hoc/withLayout';
 import Top from 'components/Top/Top';
 import About from 'components/About/About';
 import useScrollTop from 'hooks/useScrollTop';
@@ -7,6 +6,8 @@ import Skills from 'components/Skills/Skills';
 import Archiving from 'components/Archiving/Archiving';
 import Projects from 'components/Projects/Projects';
 import Header from 'components/Common/Header';
+import GlobalStyle from 'components/Common/GlobalStyle';
+import Footer from 'components/Common/Footer';
 
 const IndexPage = () => {
   const topRef = useRef<HTMLElement>(null);
@@ -47,6 +48,7 @@ const IndexPage = () => {
 
   return (
     <>
+      <GlobalStyle />
       <Header handleTopFocuse={handleTopFocuse} />
       <main>
         <Top ref={topRef} handleTopFocuse={handleTopFocuse('top')} />
@@ -61,8 +63,9 @@ const IndexPage = () => {
           handleTopFocuse={handleTopFocuse('projects')}
         />
       </main>
+      <Footer />
     </>
   );
 };
 
-export default withLayout(IndexPage);
+export default IndexPage;

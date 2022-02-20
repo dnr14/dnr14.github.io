@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { mobile, tab } from 'components/Common/GlobalStyle';
+import { maxTab, mobile } from 'components/Common/GlobalStyle';
 import React, { FC } from 'react';
 import ProjectsTop from './ProjectsTop';
 
@@ -36,14 +36,11 @@ const ProjectInfoWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  ${tab} {
-    flex-direction: column;
-  }
 `;
 const ProjectsImgCarouselWrapper = styled.div`
   width: 45%;
   margin-right: 2rem;
-  ${tab} {
+  ${maxTab} {
     width: 90%;
     margin-right: 0;
     margin-bottom: 1rem;
@@ -54,7 +51,7 @@ const ProjectsImgCarouselWrapper = styled.div`
 `;
 const ProjectsDescriptionsWrapper = styled.div`
   width: calc(55% - 2rem);
-  ${tab} {
+  ${maxTab} {
     width: 90%;
   }
   ${mobile} {
