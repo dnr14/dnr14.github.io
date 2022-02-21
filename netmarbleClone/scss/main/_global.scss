@@ -1,0 +1,54 @@
+@import "../meida/media";
+
+html {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  line-height: 1.4rem;
+  font-size: 1.4rem;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: #000;
+  }
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  @include _1260px() {
+    max-width: 1260px;
+  }
+}

@@ -1,0 +1,10 @@
+$mobile: 335px;
+$tablet668px: 668px;
+$desktop1024px: 1024px;
+$desktop1260px: 1260px;
+
+@mixin _1260px {
+  @media (min-width: #{$desktop1260px}) {
+    @content;
+  }
+}
