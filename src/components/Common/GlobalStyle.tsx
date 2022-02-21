@@ -10,6 +10,9 @@ const defaultStyle = css`
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
   }
+  body {
+    overflow-x: hidden;
+  }
 
   html,
   body,
