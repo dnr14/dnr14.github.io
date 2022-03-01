@@ -10,7 +10,6 @@ import deploy2 from 'images/skills/deploy2.png';
 import versionControl from 'images/skills/versionControl.png';
 import communication from 'images/skills/communication.png';
 import SkillsTech from './SkillsTech';
-import { DivRef } from 'types/types';
 
 const SkillsWrapper = styled.article`
   background-color: #f9c51d;

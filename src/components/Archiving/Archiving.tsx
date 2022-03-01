@@ -7,7 +7,6 @@ import {
   hoverPositionDown,
   hoverTextUnderline,
 } from 'components/Common/GlobalStyle';
-import { DivRef } from 'types/types';
 
 type Archiving = {
   handleTopFocuse: HandleTopFocuseFn;
@@ -35,9 +34,8 @@ const Archiving = ({ handleTopFocuse }: Archiving, ref: DivRef) => {
               <b>소스 코드 저장소</b>입니다.
             </ArchivingDescription>
             <ArchivingTextWrapper>
-              <li>과거 프로젝트, 프로그램, 앱의 소스 코드</li>
-              <li>과거 프로젝트, 프로그램, 앱의 소스 코드</li>
-              <li>과거 프로젝트, 프로그램, 앱의 소스 코드</li>
+              <li>프로젝트, 프로그램, 앱의 소스 코드</li>
+              <li>알고리즘 공부 했던 소스 코드</li>
             </ArchivingTextWrapper>
           </ArchivingGitHub>
         </ArchivingInnerWrapper>

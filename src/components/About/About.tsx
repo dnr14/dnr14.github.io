@@ -8,7 +8,6 @@ import envelope from 'images/about/envelope-fill.svg';
 import geo from 'images/about/geo-alt-fill.svg';
 import person from 'images/about/person-fill.svg';
 import telephone from 'images/about/telephone-fill.svg';
-import { DivRef } from 'types/types';
 
 const AboutInnerWrapper = styled.div`
   display: flex;

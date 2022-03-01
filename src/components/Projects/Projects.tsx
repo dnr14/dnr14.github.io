@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import Layout from 'components/Common/Layout';
 import Title from 'components/Common/Title';
 import React, { forwardRef } from 'react';
-import { DivRef } from 'types/types';
 import ProjectCards from './ProjectCards';
 
 type ProjectsProps = {
