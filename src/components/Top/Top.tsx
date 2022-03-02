@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { tab, whiteColor } from 'components/Common/GlobalStyle';
 import Layout from 'components/Common/Layout';
-import React, { ForwardedRef, forwardRef, FC } from 'react';
+import React, { ForwardedRef, forwardRef } from 'react';
 
 const TopWrapper = styled.article`
   background-color: #77675a;
@@ -89,8 +89,8 @@ const Top = ({ handleTopFocuse }: TopProps, ref: ForwardedRef<HTMLElement>) => {
         <HR />
         <BottomTextWrapper>
           <Text>안녕하세요.</Text>
-          <Text>개발을 즐기면서 공부하는 프론트엔드 개발자 입니다.</Text>
-          <Text>대략 여기다가 한줄쓰자.</Text>
+          <Text>천천히 꾸준히 공부하고싶은 프론트엔드 개발자 입니다.</Text>
+          <Text>꾸준히 공부하기 위해 1일 1커밋 챌린지 중입니다.</Text>
         </BottomTextWrapper>
         <MoreButton onClick={handleTopFocuse}>더 알아보기 ↓</MoreButton>
       </Layout>

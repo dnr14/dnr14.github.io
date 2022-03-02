@@ -8,6 +8,7 @@ import Projects from 'components/Projects/Projects';
 import Header from 'components/Common/Header';
 import GlobalStyle from 'components/Common/GlobalStyle';
 import Footer from 'components/Common/Footer';
+import SEO from 'components/Common/SEO';
 
 const IndexPage = () => {
   const topRef = useRef<HTMLElement>(null);
@@ -48,6 +49,7 @@ const IndexPage = () => {
 
   return (
     <>
+      <SEO />
       <GlobalStyle />
       <Header handleTopFocuse={handleTopFocuse} />
       <main>

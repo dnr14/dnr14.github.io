@@ -179,7 +179,7 @@ const ProjectCards = () => {
         </div>
       </ProjectCard>
       <ProjectCard
-        title={`Vainilla JavaScript 프로젝트`}
+        title={`Vanilla JS 프로젝트`}
         period="📆 2021.05 ~ (1人 개인 프로젝트)"
       >
         <ProjectCarousel imgs={games} />
