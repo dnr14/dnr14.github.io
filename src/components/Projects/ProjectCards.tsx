@@ -170,7 +170,7 @@ const ProjectCards = () => {
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Frontend</ProjectLabel>
-            <ProjectValue>JavaScript, SASS, CSS, Gatsby.js</ProjectValue>
+            <ProjectValue>JavaScript, SCSS, CSS, Gatsby.js</ProjectValue>
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Deployment</ProjectLabel>
@@ -193,8 +193,7 @@ const ProjectCards = () => {
             <P />
             바닐라 자바스크립트 프로젝트를 통해서{' '}
             <b className="textHighlight">
-              자바스크립트에 대해 이해도가 더 깊어지고 문법에 익숙하게
-              되었습니다.{' '}
+              자바스크립트에 대해 이해도가 높아지고 문법에 익숙하게 되었습니다.{' '}
             </b>
           </ProjectsDescriptionsMain>
 
@@ -318,7 +317,7 @@ const ProjectCards = () => {
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Frontend</ProjectLabel>
-            <ProjectValue>JavaScript, SASS, CSS, Gatsby.js</ProjectValue>
+            <ProjectValue>JavaScript, SCSS, CSS, Gatsby.js</ProjectValue>
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Deployment</ProjectLabel>
@@ -466,12 +465,12 @@ const ProjectCards = () => {
             구성하였습니다. <b className="textHighlight">JWT 방식을 이용하여</b>{' '}
             사용자의 인증 처리 했습니다.
             <P />
-            CRA를 이용을 하지 않고 <b className="textHighlight">
-              Webpack
-            </b>과 <b className="textHighlight">Babel</b>을 처음부터 작성하여
-            리액트 개발환경을 구성하였습니다.{' '}
-            <b className="textHighlight">Nginx</b>를 이용하여 리버스 프록시
-            환경을 구성을 하였습니다.
+            CRA를 이용하지 않고 <b className="textHighlight">Webpack</b>,{' '}
+            <b className="textHighlight">Babel</b>,{' '}
+            <b className="textHighlight">ESLint</b>,{' '}
+            <b className="textHighlight">Prettier</b>를 이용하여 처음부터 리액트
+            개발 환경을 구축하였습니다. <b className="textHighlight">Nginx</b>를
+            이용하여 리버스 프록시 환경을 구성을 하였습니다.
             <P />
             프론트, 백엔드를 혼자 개발하면서 웹 서비스에 대한 전체 흐름을
             경험하고 배울 수 있었습니다.
@@ -508,7 +507,9 @@ const ProjectCards = () => {
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Frontend</ProjectLabel>
-            <ProjectValue>React, Styled-components, Redux/tookit</ProjectValue>
+            <ProjectValue>
+              React, Styled-components, Redux/tookit, ESLint, Prettier, Webpack
+            </ProjectValue>
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Backend</ProjectLabel>
@@ -520,7 +521,7 @@ const ProjectCards = () => {
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Deployment</ProjectLabel>
-            <ProjectValue>AWS(EC2, S3, CloudFront)</ProjectValue>
+            <ProjectValue>AWS(EC2, S3), Nginx</ProjectValue>
           </ProjectsDescription>
         </div>
       </ProjectCard>
@@ -540,8 +541,8 @@ const ProjectCards = () => {
             CRA를 이용하지 않고 <b className="textHighlight">Webpack</b>,{' '}
             <b className="textHighlight">Babel</b>,{' '}
             <b className="textHighlight">ESLint</b>,{' '}
-            <b className="textHighlight">Prettier</b>를 이용하여 바닥부터 개발
-            환경을 구축하였습니다.
+            <b className="textHighlight">Prettier</b>를 이용하여 처음부터 리액트
+            개발 환경을 구축하였습니다.
             <P />
             API 문서를 제공하는 스웨거를 보면서 기능을 구현하였습니다.{' '}
             팀프로젝트를 진행하면서 Git을 더 잘 사용하게 되었고{' '}
@@ -588,12 +589,13 @@ const ProjectCards = () => {
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Deployment</ProjectLabel>
-            <ProjectValue>AWS(EC2, S3), Nginx, Git Action</ProjectValue>
+            <ProjectValue>AWS(EC2, S3, CloudFront), Git Action</ProjectValue>
           </ProjectsDescription>
         </div>
       </ProjectCard>
       <ProjectCard
-        title={`책을 중심으로 한 중고거래 플랫폼 BookPie 프로젝트`}
+        title={`책을 중심으로 한 중고거래 플랫폼`}
+        subTitle={`BookPie 프로젝트`}
         period="📆 2021.12.13 ~ 2022.02.13 (4人 팀 프로젝트)"
       >
         <ProjectCarousel imgs={bookpieImgs} />
@@ -610,6 +612,14 @@ const ProjectCards = () => {
             관해 많이 배울 수 있었습니다. 필요한 명세를 문서로 작성하여
             소통하였고, 필요한 지식도 함께 공유하며 학습할 수 있었습니다.
             <P />
+            CRA를 이용하지 않고 <b className="textHighlight">
+              TypeScript
+            </b>, <b className="textHighlight">Webpack</b>,{' '}
+            <b className="textHighlight">Babel</b>,{' '}
+            <b className="textHighlight">ESLint</b>,{' '}
+            <b className="textHighlight">Prettier</b>를 이용하여 처음부터
+            <b className="textHighlight">TypeScript 리액트 개발 환경</b>을
+            구축하였습니다.
             <b className="textHighlight">테스트 환경을 구축</b>을 하여 프론트,
             백엔드 협업자와 개발을 공유하며 이중 체크를 통해 실제 배포를
             하기전에 버그를 찾으며 개발을 진행하였습니다.{' '}
@@ -673,6 +683,7 @@ const ProjectCards = () => {
             <b>포트폴리오 용도로 제작한 웹사이트</b>
             입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.
             <P />
+            <b className="textHighlight">TypeScript,</b>{' '}
             <b className="textHighlight">Gatsby.js</b>를 이용하여
             개발하였습니다. Github에서 제공하는 호스팅 서비스 Github Page를
             이용하여 배포하였습니다.
@@ -708,7 +719,7 @@ const ProjectCards = () => {
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Frontend</ProjectLabel>
-            <ProjectValue>Gatsby.js, Emotion</ProjectValue>
+            <ProjectValue>TypeScript, Gatsby.js, Emotion</ProjectValue>
           </ProjectsDescription>
           <ProjectsDescription>
             <ProjectLabel>Deployment</ProjectLabel>
@@ -726,7 +737,7 @@ const ProjectsDescriptionsMain = styled.div`
   border-bottom: 1px solid #ccc;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1.5em;
 
   b.textHighlight {
     color: #ed3770;

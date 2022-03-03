@@ -3,16 +3,15 @@ import { maxTab, mobile } from 'components/Common/GlobalStyle';
 import React, { FC } from 'react';
 import ProjectsTop from './ProjectsTop';
 
-type ProjectCardProps = {
-  title: string;
-  period: string;
-  children: JSX.Element[];
-};
-
-const ProjectCard: FC<ProjectCardProps> = ({ children, period, title }) => {
+const ProjectCard: FC<ProjectCardProps> = ({
+  children,
+  period,
+  title,
+  subTitle,
+}) => {
   return (
     <ProjectCardWrapper>
-      <ProjectsTop title={title} period={period} />
+      <ProjectsTop title={title} period={period} subTitle={subTitle} />
       <ProjectInfoWrapper>
         <ProjectsImgCarouselWrapper>{children[0]}</ProjectsImgCarouselWrapper>
         <ProjectsDescriptionsWrapper>{children[1]}</ProjectsDescriptionsWrapper>

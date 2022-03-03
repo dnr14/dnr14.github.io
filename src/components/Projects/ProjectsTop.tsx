@@ -2,15 +2,11 @@ import styled from '@emotion/styled';
 import { mobile, tab } from 'components/Common/GlobalStyle';
 import React, { FC } from 'react';
 
-type ProjectsTitleProps = {
-  title: string;
-  period: string;
-};
-
-const ProjectsTop: FC<ProjectsTitleProps> = ({ title, period }) => {
+const ProjectsTop: FC<ProjectsTitleProps> = ({ title, period, subTitle }) => {
   return (
     <div>
       <ProjectsTitle>{title}</ProjectsTitle>
+      {subTitle && <ProjectsTitle>{subTitle}</ProjectsTitle>}
       <ProjectsPeriod>{period}</ProjectsPeriod>
     </div>
   );

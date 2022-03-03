@@ -16,3 +16,13 @@ declare module '*.gif' {
 declare type Types = 'about' | 'top' | 'skills' | 'archiving' | 'projects';
 declare type HandleTopFocuseFn = () => void;
 declare type DivRef = React.ForwardedRef<HTMLDivElement>;
+
+declare type ProjectsTitleProps = {
+  title: string | React.FC;
+  subTitle?: string | React.FC;
+  period: string;
+};
+
+declare type ProjectCardProps = ProjectsTitleProps & {
+  children: JSX.Element[];
+};
