@@ -448,7 +448,7 @@ const ProjectCards = () => {
       </ProjectCard>
       <ProjectCard
         title="메가 커피 클론 프로젝트 "
-        period="📆 2021.10.13 ~ 2022.11.20 (1人 개인 프로젝트)"
+        period="📆 2021.10.13 ~ 2021.11.20 (1人 개인 프로젝트)"
       >
         <ProjectCarousel imgs={[mega1, mega2, mega3, mega4, mega5]} />
         <div>
